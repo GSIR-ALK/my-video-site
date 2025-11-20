@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私人视频空间</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 密码输入界面 -->
+    <div id="passwordScreen" class="screen">
+        <div class="password-container">
+            <h1>🔒 私人视频空间</h1>
+            <p>请输入访问密码</p>
+            <input type="password" id="passwordInput" placeholder="输入密码">
+            <button onclick="checkPassword()">进入</button>
+            <p id="errorMsg" class="error"></p>
+        </div>
+    </div>
+
+    <!-- 视频播放界面 -->
+    <div id="videoScreen" class="screen hidden">
+        <div class="video-container">
+            <video 
+                id="mainVideo"
+                controls
+                controlsList="nodownload noremoteplayback"
+                disablePictureInPicture
+                oncontextmenu="return false;"
+            >
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
