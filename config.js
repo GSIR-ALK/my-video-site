@@ -4,11 +4,12 @@ const CONFIG = {
     PASSWORD: "779809",
     
     // 视频文件URL（支持本地或在线视频）
-    VIDEO_URL:"微信视频2025-11-20_235826_608.mp4", // 可以是 "https://example.com/your-video.mp4"
+    VIDEO_URL:"text.mp4", // 可以是 "https://example.com/your-video.mp4"
     
     // 可选：视频封面图片
     //VIDEO_POSTER: "poster.jpg"
 
 };
+
 
 
